@@ -1,3 +1,13 @@
 <h2>Edit Item:</h2>
-
-<form action="/{{instance.id}}?_method=put"
+​
+<form action="/{{myItems.id}}?_method=put" method="post">
+  <p>
+    <label>Attribute:</label>
+    <input type="text" value="{{myItems.text}}" name="text"/>
+  </p>
+  <input type="submit" value="Update" />
+</form>
+​
+<form action="/{{myItems}}?_method=delete" method="post">
+<input type="submit" value="Remove">
+</form>
