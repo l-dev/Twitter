@@ -1,0 +1,22 @@
+[{
+    "text": "Hello.",
+    "user": "Carl",
+    "date": 2018,
+    "length": true,
+    "likes": 5
+},
+{
+    "text": "What is everyone doing?",
+    "user": "Whitney Smiles",
+    "date": 2013,
+    "length": true,
+    "likes": 200000
+},
+{
+    "text": "I lost my phone!",
+    "user": "Caleb",
+    "date": 2013,
+    "length": true,
+    "likes": 1
+    }
+]
