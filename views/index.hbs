@@ -1,9 +1,32 @@
-<h1>Tweets!</h1>
+<h1>Twitter</h1>
 
 <ul>
-    {{#each myItems as |myItems|}}
+    {{#each myItems as |myItem|}}
     <li>
-        <a href=/show>{{myItems.text}}</a>
+        <a href="/{{myItem.id}}">{{myItem.text}}</a>
     </li>
     {{/each}}
 </ul>
+
+  <form action="/new" method="put">
+<input type="submit" value="Add New Tweet">
+</form>
+
+  <style>
+        h1{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        li {
+            border: solid black 2px;
+            padding: 10px;
+            background-color: white;
+            text-decoration: none;
+            
+        }
+       
+        
+    </style>

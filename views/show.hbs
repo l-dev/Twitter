@@ -1,2 +1,28 @@
 <h1>Tweets!</h1>
-<h2>{{ myItems.text}}</h2>
+<h1>text: {{myItems.text}}
+      <form action="/" method="post" accept-charset="utf-8">
+<p>
+    <label>create new text</label>
+    <input type="text" name="text"/>
+</p>
+<input type="submit" value="Change"/>
+</form>
+    <br>user: {{myItems.user}}
+    <br>
+    <br>date: {{myItems.date}}
+    <br>
+    <br>
+    number of likes: {{myItems.likes}}
+    <br>
+    <br>
+    under 140 characters? {{myItems.length}}</h1>
+
+
+<style>
+    body{
+        background-color: black;
+        color: yellow;
+        text-align: center;
+    }
+</style>
+

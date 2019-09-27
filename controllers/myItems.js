@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
 })
 
 //route to show to edit existing tweet
-router.get("/show", (req,res) => {
+router.get("/:id", (req,res) => {
     TweetModel.findOne({ _id: req.params.id}).then(myItems => res.render('show', {myItems}));
 })
 
@@ -47,3 +47,6 @@ router.get('/edit/:id', (req, res) => {
       })
   })
 module.exports = router;
+
+
+//attributes should be able to be edited and resubmitted. 
